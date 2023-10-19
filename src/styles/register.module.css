@@ -1,0 +1,64 @@
+.full_registration {
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+
+  /* background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  ); */
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+
+  @apply min-h-screen;
+}
+
+.form_div {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+
+  @apply flex flex-col justify-center items-center shrink-0 w-[45%] rounded-lg p-3 overflow-hidden;
+  @apply md:w-[95%];
+}
+
+.register_form {
+  @apply flex flex-col justify-center flex-wrap items-center w-full;
+}
+
+.register_form input {
+  @apply w-full;
+  @apply md:w-[80%];
+}
+
+.register_form > label {
+  @apply mb-5 md:mb-2;
+}
+
+.profile_img {
+  @apply border-4 object-cover border-gray-300 w-[150px] h-[150px] rounded-full shadow-lg cursor-pointer;
+  @apply md:w-[120] md:h-[120] hover:border-sky-300;
+}
+
+.form_btn {
+  background-image: linear-gradient(
+    83.2deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+
+  @apply p-2 rounded-md text-white mt-2 border-2 border-gray-100;
+  @apply md:mt-2;
+}
+
+.logo {
+  @apply font-bold text-3xl font-stylish text-teal-600;
+}

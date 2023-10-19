@@ -1,0 +1,3 @@
+.logo {
+  @apply font-bold text-3xl font-stylish text-teal-600;
+}
