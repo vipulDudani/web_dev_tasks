@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    
+    .container {
+      position: absolute;
+      left: 0;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-left: 20px;
+      max-width: 500px;
+      padding: px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    .btn {
+      background-color: #000000;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+      opacity: 0.9;
+      border-radius: 20px;
+    }
+
+    .btn:hover {
+      opacity: 1;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+
+
+    <class="hero">
+
+        
+    <div class="assests">
+      <a href="index">
+      <img src="img/G-logo.jpg" class="shape" /></a>
+      <img src="" class="robo" />
+    </div>
+    <div class="bg-img">
+      <form action="/payment" method="POST" class="container">
+        <h1>Order</h1>
+          <br>
+        <label for="name"><b>Name:-</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required />
+
+          <br>
+        <label for="address"><b>Address:-</b></label>
+        <input type="text" placeholder="Enter your Address" name="address" required />
+
+          <br>
+        <label for="email"><b>Email:-</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="mobile"><b>Mobile No:-</b></label>
+        <input type="text" placeholder="Enter Mobile" name="mobile" required />
+        
+        <br> <br><br>
+
+        <button type="submit" class="btn" value = "payment">Order Placed</button>
+      </form>
+    </div>
+  </body> 
+</html>
+
+
